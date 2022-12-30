@@ -30,17 +30,17 @@ export function LongPress() {
     height: size.value
   }));
   return (
-    <View style={stylesFling.container}>
+    <View style={stylesLongPress.container}>
       <GestureDetector
         gesture={buttonWithEffectionLongPress}
       >
-        <Animated.View style={[stylesFling.box, animatedStyle]} />
+        <Animated.View style={[stylesLongPress.box, animatedStyle]} />
       </GestureDetector>
     </View>
   );
 }
 
-const stylesFling = StyleSheet.create({
+const stylesLongPress = StyleSheet.create({
   container: {
     flex: 1,
     alignContent: "center",
