@@ -29,17 +29,17 @@ export function Pan() {
    transform: [{translateX: positionInHorizontal.value}]
   }));
   return (
-    <View style={stylesFling.container}>
+    <View style={stylesPan.container}>
       <GestureDetector
         gesture={rotationForHorizontal}
       >
-        <Animated.View style={[stylesFling.box, animatedStyle]} />
+        <Animated.View style={[stylesPan.box, animatedStyle]} />
       </GestureDetector>
     </View>
   );
 }
 
-const stylesFling = StyleSheet.create({
+const stylesPan = StyleSheet.create({
   container: {
     flex: 1,
     alignContent: "center",
