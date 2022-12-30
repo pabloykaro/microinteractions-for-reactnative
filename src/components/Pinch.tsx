@@ -22,17 +22,17 @@ export function Pinch() {
    transform: [{scale: scale.value}]
   }));
   return (
-    <View style={stylesFling.container}>
+    <View style={stylesPinch.container}>
       <GestureDetector
         gesture={rotationScale}
       >
-        <Animated.View style={[stylesFling.box, animatedStyle]} />
+        <Animated.View style={[stylesPinch.box, animatedStyle]} />
       </GestureDetector>
     </View>
   );
 }
 
-const stylesFling = StyleSheet.create({
+const stylesPinch = StyleSheet.create({
   container: {
     flex: 1,
     alignContent: "center",
